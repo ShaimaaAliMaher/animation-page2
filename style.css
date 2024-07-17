@@ -1,0 +1,147 @@
+*{
+   border: 0;
+   margin: 0;
+   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.main{
+   background: linear-gradient( #8ed0df,#e1edf0);
+   height: 100vh;
+  overflow: hidden;
+   position: relative;
+}
+.navbar{
+   width: 100%;
+   border-bottom: 1px solid beige;
+}
+nav{
+   width: 80%;
+   margin: auto ;
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+ }
+ nav ul li{
+   list-style: none;
+    display: inline-block;
+   color: rgb(255, 255, 255);
+   margin-left: 40px;
+   font-size: 23px;
+   cursor: pointer;
+}
+nav ul li:hover{
+   color: #6b8388;
+}
+.active{
+   color: #6b8388;
+}
+.menu{
+   width: 50px;
+   height: 20px;
+   margin-top: 9px;
+}
+.social{
+  text-align: center;
+  padding-top: 4px;
+}
+.social img{
+   cursor: pointer;
+   width: 20px;
+   margin: 0 12px;
+}
+.search{
+   text-align: center;
+   margin: auto;
+   border: 1px solid beige;
+   border-radius: 20px;
+   background: linear-gradient(#95c9d477, #e1edf077);
+   width: 25%;
+}
+::placeholder{
+   color: rgb(242, 249, 255);
+}
+.search input{
+   outline: none;
+   background:transparent;
+   width: 85%;
+   padding: 3px 12px;
+}
+.search img{
+   width: 20px;
+   margin: 5px 10px;
+}
+.cloud{
+   position: absolute;
+   width: 100%;
+  top: -40px;
+  left: 0%;
+  animation: cloud 5s  linear infinite  ;
+}
+@keyframes cloud{
+  0% { top: -40px;}
+  20% { top: 40px}
+  80%{top: 40px;}
+  100%{top: -40px;}
+}
+.plane{
+   position: absolute;
+   z-index: 2;
+   top: 24%;
+   left: -250px;
+   width: 200px;
+   animation: fly 5s linear infinite;
+}
+@keyframes fly{
+   0% {left: -250px;}
+      /* 20% { left:400px;}
+      80% {left: 400px;} */
+      100% {left: 110%;}
+}
+.balloons{
+   width:60%;
+   height: 60%;
+   position: absolute;
+   left: 53%;
+   bottom: 10px;
+   transform: translatex(-50% );
+   animation: ballons 5s linear infinite;
+}
+@keyframes ballons {
+   0% {
+      bottom: 10px;
+   }
+  20% {
+      bottom: 10px;
+   }
+   60%{
+      bottom: -400px;
+   }
+   80% {
+       bottom: -400px;
+   }
+   100% {
+     bottom: 10px;
+   }
+}
+ .balloon1{
+   width: 26%;
+   padding-top: 6%;
+ opacity: 0.4;
+animation: ba1 1s linear 2s  ;
+}
+.balloon2{
+width:36%;
+}
+.balloon3{
+width: 24%;
+padding-top: 6%;
+   opacity: 0.4;
+}
+.stop{
+   width: 80px;
+   transform: translatex(-50%);
+   position: absolute;
+   left: 50%;
+   bottom: 10PX;
+   cursor: pointer;
+}
